@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Hang The Man</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="end-game" class="no-display">
+        <h2 id="win-game">You win the game!</h2>
+        <div id="restart-game">Restart!</div>
+    </div>
+    <h1 id="title">HANGMAN</h1>
+    <div id="game">
+        <h2>Inserte Palabra</h2>
+        <input type="text" name="guess-word" id="guess-word">
+        <button id="play">Comenzar</button>
+       
+    </div>
+    <div class="canvas-container no-display" id="canvas-container">
+        <canvas id="mi-canvas"></canvas>
+        <div class="contenedor-letras" id="contenedor-letras">
+            <h2>C</h2>
+            <h2>A</h2>
+            <h2>B</h2>
+            <h2>A</h2>
+            <h2>L</h2>
+            <h2>L</h2>
+            <h2>O</h2>
+        </div>
+    </div>
+   
+    <div class="no-display" id="guess">
+        <input type="text" name="letter" id="letter">
+        <button id="guess-button">Guess</button>
+    </div>
+    <aside class="no-display" id="intentos-contenedor">
+        <h3>Intentos fallidos:</h3>
+        <div id="intentos"></div>
+        
+    </aside>
+    <aside class="no-display" id="letras-usadas-contenedor">
+        <h3>Letras usadas:</h3>
+        <div id="letras-usadas"></div>
+    </aside>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

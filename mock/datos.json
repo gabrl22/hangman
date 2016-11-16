@@ -1,0 +1,7 @@
+{
+    "tema":
+    {
+        "animales": ["perro", "gato", "loro","tigre","tortuga", "leon"],
+        "paises": ["Panama", "Costa Rica", "Colomnbia", "Venezuela"]
+    }
+}
